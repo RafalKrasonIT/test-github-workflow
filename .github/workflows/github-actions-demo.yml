@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display python version
+        uses: actions/checkout@v3
       - run: python --version
   Run-pylint:
     runs-on: ubuntu-latest
