@@ -16,6 +16,5 @@ jobs:
           pip install pylint
       - name: Pylint
         uses: actions/checkout@v3
-        run: |
+      - run: |
           find . -name '*.py' -exec pylint {} \;
-
